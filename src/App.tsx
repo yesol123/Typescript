@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import Checkname from './Checkname';
 import './App.css';
+import Write from './pages/Write';
+import List from './pages/List';
+import{useState} from 'react';
 
-function App() {
+const App:React.FC=()=>{
+  const[state,setState] = useState(false);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <article>
+      <button onClick={()=>{setState((e) => !e)}}>+</button>
+    <Checkname>
+      <div className={state?'active':''}>
+      <Write/>
+      </div>
+      <List/>
+    </Checkname>
+    </article>
+    
   );
 }
 
