@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'GangwonState';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/GangwonState.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  font-family: 'GangwonState';;
+  font-size: 24px;
+}
+
+a{
+  text-decoration: none;
+  color: #847770;
+}
+
+header{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  >a{
+    font-size: 36px;
+    margin: 30px;
+  }
+}
+
+main {
+  .always{
+    align-items: center;
+  }
+  width: 50%;
+  margin: 0 auto;
+  .maindisplay {
+    background-color: #20dad8;
+    border-radius: 10px;
+    border: 3px dashed #143988;
+    padding: 15px;
+    width: 500px;
+    margin: 0 auto;
+    h1{
+      text-align: center;
+    }
+    figure {
+      width: 128px;
+      height: 128px;
+      margin: 0 auto;
+    }
+    .button{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+
+      a {
+        border: 1px dashed #f2cc87;
+        color: white;
+        background-color: #143988;
+        padding: 5px;
+      }
+    }
+    
+
+
+    }
+    
+  }
+
+
+.numberList{
+
+  >li{
+    margin: 15px;
+    background-color:#f8d9ca;
+  border: 2px dashed #143988;
+  border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    >a{
+      width: 30%;
+      margin-top: 3px;
+    &:nth-child(1){
+        width: 20%;
+      }
+    &:nth-child(3){
+      width: 5%;
+    }
+    }
+
+  }
+}
+
+.new{
+  display: flex;
+  flex-direction: column;
+  >p{
+    text-align: center;
+  }
+  >form{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  >input{
+    border-radius: 10px;
+    border: 1px solid #f8b5b0;
+    padding: 10px;
+    margin: 5px;
+  }
+  }
+}
+
+.list{
+  section{
+    >p{text-align: center;}
+  }
+}
+.color1 {color: #f8b5b0;}
+.color2 {color: #f2cc87;}
+.color3 {color: #143988;}
+.color4 {color: #1f92d3;}
+.color5 {color: #20dad8;}
